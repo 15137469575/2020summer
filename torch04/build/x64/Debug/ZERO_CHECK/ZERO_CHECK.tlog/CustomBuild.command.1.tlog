@@ -1,0 +1,10 @@
+^E:\SUMMERPRACTICE\STUDY\DAY05\CODES\TORCH04\BUILD\CMAKEFILES\0AEA17B24380A79D3608C8947FE43EDC\GENERATE.STAMP.RULE
+setlocal
+E:\cmake\bin\cmake.exe -SE:/SummerPractice/study/day05/codes/torch04 -BE:/SummerPractice/study/day05/codes/torch04/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/SummerPractice/study/day05/codes/torch04/build/main.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

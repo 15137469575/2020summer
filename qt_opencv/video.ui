@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>video</class>
+ <widget class="QDialog" name="video">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>视频监控</string>
+  </property>
+  <widget class="QPushButton" name="btn_gray">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>110</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>灰度变换</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_video">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>411</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_gauss">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>270</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>高斯变换</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_gray</sender>
+   <signal>clicked()</signal>
+   <receiver>video</receiver>
+   <slot>gray()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>656</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_gauss</sender>
+   <signal>clicked()</signal>
+   <receiver>video</receiver>
+   <slot>gauss()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>672</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>gray()</slot>
+  <slot>gauss()</slot>
+ </slots>
+</ui>
